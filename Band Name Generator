@@ -1,0 +1,9 @@
+# Band Name Generator project from a udemy coding course for Python.
+
+print("Welcome to WolfgangZag's Audacious Gracious Band Name Generator!")
+
+city = input("What city did you grow up in?\n")
+
+pet = input("What was the name of your pet?\n")
+
+print("Your new band name is: " + (city + ' ' + pet) + "!")
