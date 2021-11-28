@@ -1,0 +1,48 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+crossroads = input("You awaken in a dark alley near some run down buildings.  You walk down until you come across a crossroads in the alley.  Do you go 'left' or 'right'?\n")
+
+if crossroads == "left" or crossroads == "Left":
+  print("You run into a group of shadows who turn to you with a murderous gaze and bloodied knives.  What happens next is too gruesome to tell.  Game Over.")
+  print("Restart code to try again!")
+elif crossroads == "right" or crossroads == "Right":
+  print("As you wander farther down the alley, it begins to open up to the docks.  Water was splashing and an island was seen rather close by.")
+  dock = input("Will you wait for a boat or swim? 'wait' or 'swim'\n")
+  if dock == "swim" or dock == "Swim":
+    print("As you hop into the water and begin swimming, you begin to feel an odd burning sensation.  The water was polluted with chemicals!  Your body goes numb and you eventually drown. Game Over.")
+    print("Restart code to try again!")
+  elif dock == "wait" or dock == "Wait":
+    print("After a few minutes of waiting, a run down looking boat with an eerie looking hooded figure comes by. Upon entering the boat, you safely make it to the island.  As you searched, you come upon a cave system that had 3 entrances in front of you.  There was a bloody entrance, a glowing entrance and a normal dark entrance.")
+    caves = input("Which entrance do you choose? 'blood', 'glow' or 'normal'\n")
+    if caves == "glow" or caves == "Glow":
+      print("As you are blinded by the light, you continue to walk forward, trying your best to see whatever you can in front of you without going blind.  Unforunately, you walk forward until your next step immediately sends you falling down a pit trap to your death.  Game Over.")
+      print("Restart code to try again!")
+    elif caves == "normal" or caves == "Normal":
+      print("You go through the dark entrance into the cave, trying your best to squint and see through the darkness.  The sound of the wind and your heartbeat was the only thing that could be heard. As you use your hands to feel around, you finally feel something furry and big.  Realizing what you just felt, the last thing you hear was the roar of a grizzly bear.  Game Over.")
+      print("Restart code to try again!")
+    elif caves == "blood" or caves == "Blood":
+      print("You strengthen your resolve and begin going down through the bloody entrance.  Trying your best to see in the dark, further down you notice a lit torch that you pick up, helping you traverse the deep dark cave.  You notice there were dead bodies around you as you ventured within.  After a good few minutes of exploring the cave, you finally see the treasure room with a dead bandit who had clearly already activated the traps.")
+      print("Luck you! It seems like you got a whole lot richer. You win!")
